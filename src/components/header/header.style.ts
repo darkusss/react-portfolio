@@ -152,8 +152,10 @@ export const StyledHeader = styled.header<NavProps>`
     ul {
       display: ${({open}) => open ? 'flex' : 'none'};
       width: 100%;
+      height: 100px;
       flex-direction: column;
       align-items: flex-start;
+      justify-content: space-between;
       
       a {
         padding-left: 0;
