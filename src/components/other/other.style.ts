@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 
-export const ContactsWrapper = styled.div`
+export const Wrapper = styled.div`
     display: flex;
+    flex-flow: wrap column;
     justify-content: center;
 `;

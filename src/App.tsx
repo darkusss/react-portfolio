@@ -7,7 +7,7 @@ import { GlobalStyles } from "./utils/global.style";
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import Projects from "./components/projects/Projects";
-import Contacts from "./components/contacts/Contacts";
+import Other from "./components/other/Other";
 
 function App() {
   const [checked, setChecked] = useState(false);
@@ -30,7 +30,7 @@ function App() {
           <Switch>
             <Route component={Home} exact path="/" />
             <Route component={Projects} path="/projects" />
-            <Route component={Contacts} path="/contacts" />
+            <Route component={Other} path="/other" />
           </Switch>
         </Router>
       </ThemeProvider>

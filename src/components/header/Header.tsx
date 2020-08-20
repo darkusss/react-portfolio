@@ -43,7 +43,7 @@ const Header: React.FC<HeaderProps> = ({onSetTheme, checked}) => {
                         <NavLink to="/projects">Projects</NavLink>
                     </NavigationItem>
                     <NavigationItem>
-                        <NavLink to="/contacts">Contacts</NavLink>
+                        <NavLink to="/other">Other</NavLink>
                     </NavigationItem>
                 </ul>
             </nav>

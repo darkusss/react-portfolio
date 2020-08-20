@@ -1,8 +1,8 @@
 import React, {useState, useCallback} from 'react';
-import {ContactsWrapper} from './contacts.style';
+import {Wrapper} from './other.style';
 import {Fact} from "../../utils/types";
 
-export default function Contacts() {
+export default function Other() {
     const [fact, setFact]: any = useState({});
 
     const getFact: (url: string) => Promise<Fact> = async (url) => {
@@ -11,11 +11,10 @@ export default function Contacts() {
 
     const onGetFact = useCallback(async () => {
         setFact(await getFact('https://uselessfacts.jsph.pl/random.json?language=en'));
-        console.log('callback works');
     }, [fact])
 
     return (
-        <ContactsWrapper>
+        <Wrapper>
             <h1>Testing get requests</h1>
             <div>
                 <button onClick={onGetFact}>
@@ -25,6 +24,6 @@ export default function Contacts() {
                     <h2>{fact.text}</h2>
                 </div>
             </div>
-        </ContactsWrapper>
+        </Wrapper>
     );
 }
