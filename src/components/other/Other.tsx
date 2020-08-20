@@ -1,5 +1,5 @@
 import React, {useState, useCallback} from 'react';
-import {Wrapper} from './other.style';
+import {Wrapper, StyledButton} from './other.style';
 import {Fact} from "../../utils/types";
 
 export default function Other() {
@@ -17,9 +17,9 @@ export default function Other() {
         <Wrapper>
             <h1>Testing get requests</h1>
             <div>
-                <button onClick={onGetFact}>
-                    Get posts!
-                </button>
+                <StyledButton onClick={onGetFact}>
+                    Get random fact!
+                </StyledButton>
                 <div>
                     <h2>{fact.text}</h2>
                 </div>

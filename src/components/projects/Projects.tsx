@@ -10,6 +10,12 @@ export default function Projects() {
       githubRepo: "https://github.com/darkusss/todo-list",
       liveDemo: undefined,
     },
+    {
+      img: test,
+      title: 'Ui-library with Vue.js',
+      githubRepo: "https://github.com/darkusss/UI-library",
+      liveDemo: undefined
+    }
   ]);
 
   const convertedData = data.map((datum, key) => {
