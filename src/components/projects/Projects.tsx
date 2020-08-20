@@ -28,7 +28,13 @@ export default function Projects() {
                 github
               </a>
               {datum.liveDemo ? (
-                <a href={datum.liveDemo}>Live Demo</a>
+                <a
+                  href={datum.liveDemo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Demo
+                </a>
               ) : (
                 <p>No demo</p>
               )}

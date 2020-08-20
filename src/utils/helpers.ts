@@ -1,20 +1,12 @@
-import { ThemeType } from "../utils/types";
+const customMediaQuery: (a: number) => string = (maxWidth) => {
+    return `@media (max-width: ${maxWidth}px)`;
+}
 
-export const getLocalStorageItem: (k: string) => ThemeType = (key) => {
-  const value: string | null = localStorage.getItem(key);
+export const media = {
+    custom: customMediaQuery,
+    desktop: customMediaQuery(922),
+    tablet: customMediaQuery(768),
+    mobile: customMediaQuery(576),
+}
 
-  if (!value) {
-    throw new Error("Theme is not found in local storage!");
-  }
 
-  return JSON.parse(value);
-};
-
-export const setLocalStorageItem: (k: string, data: ThemeType) => void = (
-  key,
-  data
-) => {
-  if (data && key) {
-    localStorage.setItem(key, JSON.stringify(data));
-  }
-};
