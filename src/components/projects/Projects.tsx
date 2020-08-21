@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import test from "../../assets/test.jpg";
-import "./projects.css";
+import { StyledProjects } from "./projects.style";
 
 export default function Projects() {
   const [data, setData] = useState([
     {
       img: test,
-      title: "Todo list",
+      title: "Todo list with React.js",
       githubRepo: "https://github.com/darkusss/todo-list",
       liveDemo: undefined,
     },
@@ -54,7 +54,7 @@ export default function Projects() {
   return (
     <div>
       <h1>Projects</h1>
-      <div className="projects">{convertedData}</div>
+      <StyledProjects>{convertedData}</StyledProjects>
     </div>
   );
 }

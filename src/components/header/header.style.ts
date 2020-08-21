@@ -141,31 +141,31 @@ export const StyledHeader = styled.header<NavProps>`
   }
   
   ${media.mobile} {
-  nav {
-    flex-direction: column;
-    
-    > div {
-      width: 100%;
-      margin-bottom: 2rem;
-    }
-    
-    ul {
-      display: ${({open}) => open ? 'flex' : 'none'};
-      width: 100%;
-      height: 100px;
+    nav {
       flex-direction: column;
-      align-items: flex-start;
-      justify-content: space-between;
       
-      a {
-        padding-left: 0;
+      > div {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+      
+      ul {
+        display: ${({open}) => open ? 'flex' : 'none'};
+        width: 100%;
+        height: 100px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        
+        a {
+          padding-left: 0;
+        }
+      }
+      
+      button {
+        display: block;
       }
     }
-    
-    button {
-      display: block;
-    }
-  }
 `;
 
 export const NavigationItem = styled.li`
