@@ -21,7 +21,7 @@ export default function Other() {
                     Get random fact!
                 </StyledButton>
                 <div>
-                    <h2>{fact.text}</h2>
+                    <h3>{fact.text}</h3>
                 </div>
             </div>
         </Wrapper>
