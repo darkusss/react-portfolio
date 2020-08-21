@@ -2,9 +2,13 @@ export type ThemeType = {
   [key: string]: string;
 };
 
+export type GlobalStyleProps = {
+  theme: ThemeType;
+}
+
 export type NavProps = {
-  checked: boolean,
-  open: boolean,
+  checked: boolean;
+  open: boolean;
 }
 
 export type HeaderProps  = {
@@ -13,10 +17,10 @@ export type HeaderProps  = {
 };
 
 export type Fact = {
-  id: string,
-  title: string,
-  source: string,
-  source_url: string,
-  permalink: string
+  id: string;
+  title: string;
+  source: string;
+  source_url: string;
+  permalink: string;
 };
 

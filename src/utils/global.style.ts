@@ -1,8 +1,7 @@
 import { createGlobalStyle } from "styled-components";
+import { GlobalStyleProps } from "./types";
 
-export const GlobalStyles = createGlobalStyle<{
-  theme: { [key: string]: string };
-}>`
+export const GlobalStyles = createGlobalStyle<GlobalStyleProps>`
  *,
   *::after,
   *::before {
@@ -26,6 +25,13 @@ export const GlobalStyles = createGlobalStyle<{
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 3em;
+    margin-bottom: 0;
   }
+  
+  h2 {
+      font-size: 2em;
+      margin-top: 0;
+  }
+  
 `;
