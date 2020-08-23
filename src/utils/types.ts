@@ -4,23 +4,22 @@ export type ThemeType = {
 
 export type GlobalStyleProps = {
   theme: ThemeType;
-}
+};
 
 export type NavProps = {
   checked: boolean;
   open: boolean;
-}
+};
 
-export type HeaderProps  = {
+export type HeaderProps = {
   onSetTheme: () => void;
   checked: boolean;
 };
 
 export type Fact = {
   id: string;
-  title: string;
   source: string;
   source_url: string;
   permalink: string;
+  text: string;
 };
-

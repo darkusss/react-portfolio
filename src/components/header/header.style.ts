@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 import {media} from '../../utils/helpers';
 import {NavProps} from "../../utils/types";
 

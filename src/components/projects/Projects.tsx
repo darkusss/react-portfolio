@@ -12,17 +12,17 @@ export default function Projects() {
     },
     {
       img: test,
-      title: 'Ui-library with Vue.js',
+      title: "Ui-library with Vue.js",
       githubRepo: "https://github.com/darkusss/UI-library",
-      liveDemo: undefined
-    }
+      liveDemo: undefined,
+    },
   ]);
 
   const convertedData = data.map((datum, key) => {
     return (
       <div className="project" key={"project-" + key}>
         <div className="open-zone">
-          <img src={datum.img} />
+          <img src={datum.img} alt="project img" />
           <div className="close-zone">
             <h3>{datum.title}</h3>
             <div className="project-links">
