@@ -156,10 +156,6 @@ export const StyledHeader = styled.header<NavProps>`
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
-        
-        a {
-          padding-left: 0;
-        }
       }
       
       button {
@@ -175,7 +171,7 @@ export const NavigationItem = styled.li`
     font-weight: 700;
     text-decoration: none;
     cursor: pointer;
-    padding: 0.25em 0.75em;
+    padding: 0.25em 0;
     position: relative;
 
     &:after {

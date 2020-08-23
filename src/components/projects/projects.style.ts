@@ -1,71 +1,63 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import { media } from "../../utils/helpers";
 
 export const StyledProjects = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  .project {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    
-    .project {
-        max-width: 300px;
-        height: 200px;
-        color: #fff;
-        margin: .5rem 1rem;
+    flex-flow: wrap column;
+
+    min-width: 200px;
+    max-width: 300px;
+
+    border-radius: 1rem;
+    margin: 1rem;
+
+    background: #e2e2e2;
+    color: #363537;
+
+    box-shadow: 3px 3px 6px 4px hsla(5, 0%, 50%, 0.2);
+
+    .project-image {
+      width: 100%;
+
+      border-radius: 1rem 1rem 0 0;
     }
-    
-    .open-zone {
-        position: relative;
-        max-width: 100%;
-        height: 100%;
-        box-shadow: 2px 2px 13px rgba(0, 0, 0, .3);
+
+    .project-content {
+      margin: 1rem;
+      .project-title {
+        font-weight: 400;
+      }
+
+      .project-desc {
+        font-weight: 300;
+      }
+
+      .project-skill {
+          border: 1px solid #363537;
+          border-radius: 10px;
+          padding: .25rem;
+          margin-right: .75rem;
+      }
+
+      .project-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+        a {
+          color: #363537;
+        }
         
         img {
-            width: 100%;
+          width: 32px;
         }
+      }
     }
-    
-    .open-zone:hover .close-zone {
-        bottom: 0;
-    }
-    
-    .close-zone {
-        background-color: rgba(0, 0, 0, .5);
-        overflow: hidden;
-
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 100%;
-
-        display: flex;
-        justify-content: center;
-        flex-flow: nowrap column;
-        align-items: center;
-
-        transition: .5s ease;
-        
-        h3 {
-            margin: 0 0 10px;
-        }
-        
-        a {
-            color: #fff;
-        }
-        
-        .project-links {
-            display: flex;
-            width: 100%;
-            justify-content: space-evenly;
-            
-            p {
-                margin: 0;
-            }
-        }
-    }
-    
-    ${media.tablet} {
-        justify-content: center;
-    }
+  }
 `;
