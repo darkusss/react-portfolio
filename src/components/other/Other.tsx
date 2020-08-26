@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Wrapper, StyledButton } from "./other.style";
-import { Fact } from "../../utils/types";
+import React, { useState } from 'react';
+import { Wrapper, StyledButton } from './other.style';
+import { Fact } from '../../utils/types';
 
 export default function Other() {
   const [fact, setFact] = useState({});

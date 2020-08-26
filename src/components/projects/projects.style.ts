@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { media } from "../../utils/helpers";
+import styled from 'styled-components';
+import { media } from '../../utils/helpers';
 
 export const StyledProjects = styled.div`
   display: flex;
