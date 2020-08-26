@@ -9,7 +9,6 @@ export const GlobalStyles = createGlobalStyle<GlobalStyleProps>`
   }
 
   body {
-    height: 100vh;
     margin: 0;
     padding: 0;
     background: ${({ theme }) => theme.background};
