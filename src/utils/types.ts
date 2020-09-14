@@ -15,11 +15,3 @@ export type HeaderProps = {
   onSetTheme: () => void;
   checked: boolean;
 };
-
-export type Fact = {
-  id: string;
-  source: string;
-  source_url: string;
-  permalink: string;
-  text: string;
-};

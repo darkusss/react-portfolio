@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { media } from '../../utils/helpers';
-import { NavProps } from '../../utils/types';
+import styled from "styled-components";
+import { media } from "../../utils/helpers";
+import { NavProps } from "../../utils/types";
 
 export const StyledHeader = styled.header<NavProps>`
   position: sticky;
@@ -24,7 +24,6 @@ export const StyledHeader = styled.header<NavProps>`
     ul {
       width: 70%;
       display: flex;
-      justify-content: space-between;
       align-items: center;
       margin: 0;
       padding: 0;
@@ -44,8 +43,8 @@ export const StyledHeader = styled.header<NavProps>`
       position: relative;
       width: 25px;
       height: 5px;
-      background: ${ ({ theme }) => theme.color };
-      transform: ${ ({ open }) => open ? 'rotate(45deg)' : null };
+      background: ${({ theme }) => theme.color};
+      transform: ${({ open }) => (open ? "rotate(45deg)" : null)};
       transition: all .3s ease;
       border-radius: 10px;
       
@@ -57,8 +56,8 @@ export const StyledHeader = styled.header<NavProps>`
         left: 0;
         right: 0;
         height: 5px;
-        background: ${ ({ theme }) => theme.color }; 
-        margin-left: ${ ({ open }) => open ? '100px' : '0' };
+        background: ${({ theme }) => theme.color}; 
+        margin-left: ${({ open }) => (open ? "100px" : "0")};
         transition: all .3s ease;
         border-radius: 10px;
       }
@@ -66,12 +65,13 @@ export const StyledHeader = styled.header<NavProps>`
       &:after {
         content: '';
         position: absolute;
-        transform: ${ ({ open }) => open ? 'rotate(90deg) translateX(-31%)' : null };
+        transform: ${({ open }) =>
+          open ? "rotate(90deg) translateX(-31%)" : null};
         bottom: -8px;
         left: 0;
         right: 0;
         height: 5px;
-        background: ${ ({ theme }) => theme.color }; 
+        background: ${({ theme }) => theme.color}; 
         transition: all .3s ease;
         border-radius: 10px;
       }
@@ -103,7 +103,7 @@ export const StyledHeader = styled.header<NavProps>`
           bottom: 0;
           margin: auto 0;
           transition: opacity 200ms linear;
-          opacity: ${ (props) => (props.checked ? 1 : 0.0) };
+          opacity: ${(props) => (props.checked ? 1 : 0.0)};
 
           img {
             max-width: 100%;
@@ -113,7 +113,7 @@ export const StyledHeader = styled.header<NavProps>`
 
           &:nth-child(2) {
             left: calc(100% - 21px);
-            opacity: ${ (props) => (props.checked ? 0.0 : 1) };
+            opacity: ${(props) => (props.checked ? 0.0 : 1)};
           }
         }
 
@@ -126,8 +126,8 @@ export const StyledHeader = styled.header<NavProps>`
           left: 1px;
           border-radius: 50%;
           transition: all 0.5s;
-          transform: ${ (props) =>
-    props.checked ? 'translateX(26px)' : 'translateX(0px)' };
+          transform: ${(props) =>
+            props.checked ? "translateX(26px)" : "translateX(0px)"};
         }
 
         input {
@@ -140,7 +140,7 @@ export const StyledHeader = styled.header<NavProps>`
       }
   }
   
-  ${ media.mobile } {
+  ${media.mobile} {
     nav {
       flex-direction: column;
       
@@ -150,7 +150,7 @@ export const StyledHeader = styled.header<NavProps>`
       }
       
       ul {
-        display: ${ ({ open }) => open ? 'flex' : 'none' };
+        display: ${({ open }) => (open ? "flex" : "none")};
         width: 100%;
         height: 100px;
         flex-direction: column;
@@ -166,6 +166,7 @@ export const StyledHeader = styled.header<NavProps>`
 
 export const NavigationItem = styled.li`
   list-style: none;
+  margin-right: 2rem;
 
   & > a {
     font-weight: 700;
@@ -185,7 +186,7 @@ export const NavigationItem = styled.li`
 
       transition: all 300ms linear;
 
-      background: ${ ({ theme }) => theme.colorLink };
+      background: ${({ theme }) => theme.colorLink};
     }
 
     &:hover:after {
