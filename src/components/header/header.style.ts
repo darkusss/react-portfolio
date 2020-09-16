@@ -3,11 +3,6 @@ import { media } from "../../utils/helpers";
 import { NavProps } from "../../utils/types";
 
 export const StyledHeader = styled.header<NavProps>`
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-
   nav {
     margin: 1.5em 0;
     display: flex;

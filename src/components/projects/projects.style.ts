@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { media } from '../../utils/helpers';
+import styled from "styled-components";
+import { media } from "../../utils/helpers";
 
 export const StyledProjects = styled.div`
   display: flex;
@@ -21,6 +21,12 @@ export const StyledProjects = styled.div`
     color: #363537;
 
     box-shadow: 3px 3px 6px 4px hsla(5, 0%, 50%, 0.2);
+    transition: all 200ms;
+
+    &:hover {
+      transform: scale(1.08);
+      box-shadow: 3px 3px 6px 10px hsla(5, 0%, 50%, 0.2);
+    }
 
     .project-image {
       width: 100%;
@@ -39,10 +45,10 @@ export const StyledProjects = styled.div`
       }
 
       .project-skill {
-          border: 1px solid #363537;
-          border-radius: 10px;
-          padding: .25rem;
-          margin-right: .75rem;
+        border: 1px solid #363537;
+        border-radius: 10px;
+        padding: 0.25rem;
+        margin-right: 0.75rem;
       }
 
       .project-links {
@@ -53,7 +59,7 @@ export const StyledProjects = styled.div`
         a {
           color: #363537;
         }
-        
+
         img {
           width: 32px;
         }
