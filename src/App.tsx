@@ -24,7 +24,7 @@ function App(): JSX.Element {
     <ThemeProvider theme={checked ? DarkTheme : LightTheme}>
       <Container>
         <GlobalStyles />
-        <Router>
+        <Router basename="/react-portfolio">
           <Header {...headerProps} />
           <Switch>
             <Route component={Home} exact path="/" />
