@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { media } from "../../utils/helpers";
 
 export const StyledProjects = styled.div`
   display: flex;
@@ -52,11 +51,9 @@ export const StyledProjects = styled.div`
       }
 
       .project-links {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         margin-top: 1rem;
         a {
+          margin-right: 0.5rem;
           color: #363537;
         }
 
