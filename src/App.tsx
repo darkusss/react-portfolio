@@ -7,6 +7,7 @@ import { GlobalStyles } from "./utils/global.style";
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import Projects from "./components/projects/Projects";
+import About from "./components/about/About";
 
 function App(): JSX.Element {
   const [checked, setChecked] = useState(false);
@@ -27,8 +28,15 @@ function App(): JSX.Element {
         <Router basename="/react-portfolio">
           <Header {...headerProps} />
           <Switch>
-            <Route component={Home} exact path="/" />
-            <Route component={Projects} path="/projects" />
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/projects">
+              <Projects />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
           </Switch>
         </Router>
       </Container>

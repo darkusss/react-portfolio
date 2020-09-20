@@ -35,6 +35,9 @@ const Header: React.FC<HeaderProps> = ({ onSetTheme, checked }: any) => {
           <NavigationItem>
             <NavLink to="/projects">Projects</NavLink>
           </NavigationItem>
+          <NavigationItem>
+            <NavLink to="/about">About me</NavLink>
+          </NavigationItem>
         </ul>
       </nav>
     </StyledHeader>

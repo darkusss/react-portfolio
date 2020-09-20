@@ -11,6 +11,10 @@ export type NavProps = {
   open: boolean;
 };
 
+export type FlexProps = {
+  reverse?: boolean;
+};
+
 export type HeaderProps = {
   onSetTheme: () => void;
   checked: boolean;
