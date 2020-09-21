@@ -6,8 +6,11 @@ export const Flex = styled.div<FlexProps>`
   flex-flow: wrap ${({ reverse }): string => (reverse ? "row-reverse" : "")};
   flex-wrap: wrap;
   align-items: center;
+  border-radius: ${({ reverse }): string =>
+    reverse ? "0 150px 150px 0" : "150px 0 0 150px"};
+  transition: all 0.3s ease-out;
 
-  &:hover > div {
+  &:hover {
     color: ${({ theme }): string => theme.background};
     background: ${({ theme }): string => theme.color};
   }
@@ -23,9 +26,6 @@ export const Circle = styled.div`
   height: 300px;
 
   border-radius: 50%;
-
-  margin: 0.5rem;
-  transition: all 0.3s ease-out;
 
   & > p {
     max-width: 250px;
