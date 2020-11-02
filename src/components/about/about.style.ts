@@ -1,19 +1,15 @@
 import styled from "styled-components";
-import { FlexProps } from "../../utils/types";
+
+interface FlexProps {
+    reverse?: boolean;
+}
 
 export const Flex = styled.div<FlexProps>`
   display: flex;
-  flex-flow: wrap ${({ reverse }): string => (reverse ? "row-reverse" : "")};
-  flex-wrap: wrap;
+  flex-flow: wrap ${({reverse}): string => (reverse ? "row-reverse" : "")};
   align-items: center;
-  border-radius: ${({ reverse }): string =>
+  border-radius: ${({reverse}): string =>
     reverse ? "0 150px 150px 0" : "150px 0 0 150px"};
-  transition: all 0.3s ease-out;
-
-  &:hover {
-    color: ${({ theme }): string => theme.background};
-    background: ${({ theme }): string => theme.color};
-  }
 `;
 
 export const Circle = styled.div`

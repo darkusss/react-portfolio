@@ -1,5 +1,6 @@
-import { createGlobalStyle } from "styled-components";
-import { GlobalStyleProps } from "./types";
+import {createGlobalStyle} from "styled-components";
+import {GlobalStyleProps} from "./types";
+
 
 export const GlobalStyles = createGlobalStyle<GlobalStyleProps>`
  *,
@@ -11,8 +12,8 @@ export const GlobalStyles = createGlobalStyle<GlobalStyleProps>`
   body {
     margin: 0;
     padding: 0;
-    background: ${({ theme }): string => theme.background};
-    color: ${({ theme }): string => theme.color};
+    background: ${({theme}): string => theme.background};
+    color: ${({theme}): string => theme.color};
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -20,7 +21,7 @@ export const GlobalStyles = createGlobalStyle<GlobalStyleProps>`
   }
 
   a {
-    color: ${({ theme }): string => theme.colorLink};
+    color: ${({theme}): string => theme.colorLink};
   }
 
   h1 {

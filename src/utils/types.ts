@@ -1,21 +1,16 @@
-export type ThemeType = {
-  [key: string]: string;
-};
+export interface Theme {
+    [key: string]: string;
+}
 
-export type GlobalStyleProps = {
-  theme: ThemeType;
-};
+export interface GlobalStyleProps {
+    theme: Theme;
+}
 
-export type NavProps = {
-  checked: boolean;
-  open: boolean;
-};
-
-export type FlexProps = {
-  reverse?: boolean;
-};
-
-export type HeaderProps = {
-  onSetTheme: () => void;
-  checked: boolean;
-};
+export interface ProjectItem {
+    img: string;
+    title: string;
+    desc: string;
+    skills: string[];
+    githubRepo: string;
+    liveDemo?: string;
+}
