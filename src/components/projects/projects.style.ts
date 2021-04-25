@@ -35,6 +35,7 @@ export const StyledProjects = styled.div`
 
     .project-content {
       margin: 1rem;
+
       .project-title {
         font-weight: 400;
       }
@@ -52,6 +53,7 @@ export const StyledProjects = styled.div`
 
       .project-links {
         margin-top: 1rem;
+
         a {
           margin-right: 0.5rem;
           color: #363537;

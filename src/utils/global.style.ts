@@ -3,7 +3,7 @@ import {GlobalStyleProps} from "./types";
 
 
 export const GlobalStyles = createGlobalStyle<GlobalStyleProps>`
- *,
+  *,
   *::after,
   *::before {
     box-sizing: border-box;
@@ -28,10 +28,10 @@ export const GlobalStyles = createGlobalStyle<GlobalStyleProps>`
     font-size: 3em;
     margin-bottom: 0;
   }
-  
+
   h2 {
-      font-size: 2em;
-      margin-top: 0;
+    font-size: 2em;
+    margin-top: 0;
   }
-  
+
 `;

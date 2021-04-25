@@ -13,15 +13,13 @@ module.exports = {
     extends: [
         "plugin:react/recommended", // Uses the recommended rules from @eslint-plugin-react
         "plugin:@typescript-eslint/recommended", // Uses the recommended rules from @typescript-eslint/eslint-plugin
-
     ],
     rules: {
-        "babel/new-cap": 1,
         "babel/camelcase": 1,
         "babel/no-invalid-this": 1,
-        "babel/object-curly-spacing": 1,
-        "babel/quotes": 1,
-        "babel/semi": 1,
+        "babel/object-curly-spacing": ["error", "always"],
+        "babel/quotes": ["error", "single"],
+        "babel/semi": ["error", "always"],
         "babel/no-unused-expressions": 1,
         "babel/valid-typeof": 1
     },
