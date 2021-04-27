@@ -6,7 +6,7 @@ import ProjectLinks from './ProjectLinks';
 import { ProjectItem } from '../../utils/types';
 
 function Projects(): JSX.Element {
-	const [projectsData, setProjectsData] = useState<ProjectItem[]>([
+	const [projectsData] = useState<ProjectItem[]>([
 		{
 			img: test,
 			title: 'Todo list',

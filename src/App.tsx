@@ -4,7 +4,6 @@ import { ThemeProvider } from 'styled-components';
 import { DarkTheme, LightTheme } from './themes/themes';
 import { Container } from './app.style';
 import { GlobalStyles } from './utils/global.style';
-import { Tween } from 'react-gsap';
 import Routes from './Routes';
 import Header from './components/header/Header';
 
@@ -22,15 +21,13 @@ function App(): JSX.Element {
 
 	return (
 		<ThemeProvider theme={checked ? DarkTheme : LightTheme}>
-			<Tween from={{ y: '-100%' }} to={{ y: '0%' }}>
-				<Container>
-					<GlobalStyles/>
-					<Router basename="/react-portfolio">
-						<Header {...headerProps} />
-						<Routes/>
-					</Router>
-				</Container>
-			</Tween>
+			<Container>
+				<GlobalStyles/>
+				<Router basename="/react-portfolio">
+					<Header {...headerProps} />
+					<Routes/>
+				</Router>
+			</Container>
 		</ThemeProvider>
 	);
 }
