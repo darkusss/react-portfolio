@@ -1,7 +1,11 @@
 import React from 'react';
 import { ProjectItem } from '../../utils/types';
 
-const ProjectLinks = ({ projectData }: { projectData: ProjectItem }): JSX.Element => {
+interface Props {
+	projectData: ProjectItem;
+}
+
+const ProjectLinks= ({ projectData }: Props): JSX.Element => {
 	return (
 		<div className="project-links">
 			<a
@@ -14,23 +18,21 @@ const ProjectLinks = ({ projectData }: { projectData: ProjectItem }): JSX.Elemen
 					alt="github"
 				/>
 			</a>
-			<a
-				href={projectData.liveDemo ? projectData.liveDemo : '#'}
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				{projectData.liveDemo ? (
+			{projectData.liveDemo ? (
+				<a href={projectData.liveDemo} target="_blank" rel="noopener noreferrer">
 					<img
 						src="https://img.icons8.com/ios/50/000000/visible.png"
-						alt="eye"
+						alt="opened eye"
 					/>
-				) : (
+				</a>
+			) : (
+				<span className="hidden-eye">
 					<img
 						src="https://img.icons8.com/ios/50/000000/hide.png"
-						alt="hide-eye"
+						alt="hidden eye"
 					/>
-				)}
-			</a>
+				</span>
+			)}
 		</div>
 	);
 };

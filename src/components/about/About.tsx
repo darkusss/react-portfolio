@@ -6,9 +6,7 @@ const About = (): JSX.Element => {
 		<div>
 			<h1>About me</h1>
 			<Flex>
-				I am Vlad and I am 18. In my free time I like doing things that can improve me. I dream about working in
-				a superb company and pleause atmosphere.
-				Always keep going to do my best.
+				Hoo-nne-yy!
 			</Flex>
 		</div>
 	);

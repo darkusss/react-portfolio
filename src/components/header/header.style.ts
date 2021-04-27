@@ -1,12 +1,11 @@
-import styled from "styled-components";
-import {media} from "../../utils/helpers";
-import {GlobalStyleProps} from "../../utils/types";
+import styled from 'styled-components';
+import { media } from '../../utils/helpers';
+import { GlobalStyleProps } from '../../utils/types';
 
 interface StyledHeaderProps {
     checked: boolean;
     open: boolean;
 }
-
 
 export const StyledHeader = styled.header<StyledHeaderProps>`
   nav {
@@ -44,9 +43,9 @@ export const StyledHeader = styled.header<StyledHeaderProps>`
       position: relative;
       width: 25px;
       height: 5px;
-      background: ${({theme}: GlobalStyleProps): string => theme.color};
-      transform: ${({open}): string | null =>
-    open ? "rotate(45deg) translateX(-31%)" : null};
+      background: ${({ theme }: GlobalStyleProps): string => theme.color};
+      transform: ${({ open }): string | null =>
+    open ? 'rotate(45deg) translateX(-31%)' : null};
       transition: all .3s ease;
       border-radius: 10px;
       
@@ -57,8 +56,8 @@ export const StyledHeader = styled.header<StyledHeaderProps>`
         left: 0;
         right: 0;
         height: 5px;
-        background: ${({theme}: GlobalStyleProps): string => theme.color}; 
-        margin-left: ${({open}): string => (open ? "100px" : "0")};
+        background: ${({ theme }: GlobalStyleProps): string => theme.color}; 
+        margin-left: ${({ open }): string => (open ? '100px' : '0')};
         transition: all .3s ease;
         border-radius: 10px;
       }
@@ -66,13 +65,13 @@ export const StyledHeader = styled.header<StyledHeaderProps>`
       &:after {
         content: '';
         position: absolute;
-        transform: ${({open}): string | null =>
-    open ? "rotate(90deg) translateX(-31%)" : null};
+        transform: ${({ open }): string | null =>
+    open ? 'rotate(90deg) translateX(-31%)' : null};
         bottom: -8px;
         left: 0;
         right: 0;
         height: 5px;
-        background: ${({theme}: GlobalStyleProps): string => theme.color}; 
+        background: ${({ theme }: GlobalStyleProps): string => theme.color}; 
         transition: all .3s ease;
         border-radius: 10px;
       }
@@ -127,7 +126,7 @@ export const StyledHeader = styled.header<StyledHeaderProps>`
           left: 1px;
           border-radius: 50%;
           transition: all 0.5s;
-          transform: ${(props): string => props.checked ? "translateX(26px)" : "translateX(0px)"};
+          transform: ${(props): string => props.checked ? 'translateX(26px)' : 'translateX(0px)'};
         }
 
         input {
@@ -150,7 +149,7 @@ export const StyledHeader = styled.header<StyledHeaderProps>`
       }
       
       ul {
-        display: ${({open}): string => (open ? "flex" : "none")};
+        display: ${({ open }): string => (open ? 'flex' : 'none')};
         width: 100%;
         min-height: 100px;
         flex-direction: column;
@@ -191,7 +190,7 @@ export const NavigationItem = styled.li`
 
       transition: all 400ms ease-in;
 
-      border: 3px solid ${({theme}: GlobalStyleProps): string => theme.colorLink};
+      border: 3px solid ${({ theme }: GlobalStyleProps): string => theme.colorLink};
       border-top: none;
       border-right: none;
     }
@@ -213,7 +212,7 @@ export const NavigationItem = styled.li`
 
       transition: all 400ms ease-in;
 
-      border: 3px solid ${({theme}: GlobalStyleProps): string => theme.colorLink};
+      border: 3px solid ${({ theme }: GlobalStyleProps): string => theme.colorLink};
       border-bottom: none;
       border-left: none;
     }

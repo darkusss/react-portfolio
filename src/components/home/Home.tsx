@@ -1,11 +1,11 @@
 import React from 'react';
-import { HomeWrapper } from './home.style';
+import { HomeWrapper, Heading } from './home.style';
 
 function Home(): JSX.Element {
 	return (
 		<HomeWrapper>
-			<h1>Hello.</h1>
-			<h2>I am Vlad Kryvokoniev.</h2>
+			<Heading>Hello.</Heading>
+			<h2>I am a beginner Front-end developer.</h2>
 			<p>
 				You can find me on:{' '}
 				<a
@@ -13,7 +13,6 @@ function Home(): JSX.Element {
 					rel="noopener noreferrer"
 					target="_blank"
 				>
-					{' '}
 					Github
 				</a>
 				{', '}

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledProjects = styled.div`
   display: flex;
@@ -61,6 +61,10 @@ export const StyledProjects = styled.div`
 
         img {
           width: 32px;
+        }
+
+        .hidden-eye {
+	        cursor: not-allowed;
         }
       }
     }
