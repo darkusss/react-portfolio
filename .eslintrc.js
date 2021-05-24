@@ -7,9 +7,13 @@ module.exports = {
             jsx: true, // Allows for the parsing of JSX
         },
     },
+    settings: {
+        react: {
+            version: "detect",
+        },
+    },
     plugins: [
         "babel",
-        "react",
     ],
     extends: [
         "plugin:react/recommended", // Uses the recommended rules from @eslint-plugin-react
