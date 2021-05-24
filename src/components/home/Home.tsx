@@ -1,11 +1,11 @@
 import React from 'react';
 import { HomeWrapper, Heading } from './home.style';
 
-function Home(): JSX.Element {
+const Home: React.FC = () => {
 	return (
 		<HomeWrapper>
 			<Heading>Hello.</Heading>
-			<h2>I am a beginner Front-end developer.</h2>
+			<h2>I am a Front-end developer.</h2>
 			<p>
 				You can find me on:{' '}
 				<a
@@ -26,6 +26,6 @@ function Home(): JSX.Element {
 			</p>
 		</HomeWrapper>
 	);
-}
+};
 
 export default Home;
